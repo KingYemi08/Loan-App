@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="logo_img"></div>
+            <div class="list_items">
+                <ul class="list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Blog</li>
+                    <li>Page</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+     <div class="bg">
+        <div class="left">
+            <h2>Find The Best <br> Monthly Pay</h2><br>
+            <p>Apply for our business loan in minutes, without long procedures</p>
+        </div>
+        <div class="right">
+            <form action="" class="loan-quest">
+                <div class="items">
+                    <label for="">Total Annual Income:</label>
+                    <input type="text" id="income">
+                    <p id="income_err"></p>
+                </div>
+                <div class="items">
+                    <label for="">Current Amount in Account:</label>
+                    <input type="text"  id="balance">
+                    <p id="balance_err"></p>
+                </div>
+                <div class="items">
+                    <label for="">Total Amount of Loan:</label>
+                    <input type="text" id="loan">
+                    <p id="loan_err"></p>
+                </div>
+                <div class="items">
+                    <label for="">Last Deposit Date:</label>
+                    <input type="date"  id="depositDate">
+                    <p id="depositDate_err"></p>
+                </div>
+                <div class="items">
+                    <label for="">Last loan Collection Date:</label>
+                    <input type="text"  id="collection">
+                    <p id="collection_err"></p>
+                </div>
+                <div class="items">
+                    <label for="">Loan Repayment Period (IN MONTHS):</label>
+                    <input type="number"  id="repayment">
+                    <p id="repayment_err"></p>
+                </div>
+                <div class="items">
+                    <select name="" id="select">
+                        <option value="">ACCOUNT TYPE</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Current">Current</option>
+                    </select>
+                    <p id="acct_type_err"></p>
+                </div>
+                </form>
+            <button onclick="submit(event)">Get Your Loan Now !</button>
+                </div>
+     </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
