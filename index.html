@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div>
+    <div class="none">
         <nav>
             <div class="logo_img"></div>
             <div class="list_items">
@@ -21,6 +21,9 @@
                 </ul>
             </div>
         </nav>
+    </div>
+    <div class="not">
+        <div class="not_bg"></div> 
     </div>
      <div class="bg">
         <div class="left">
@@ -50,13 +53,39 @@
                     <p id="depositDate_err"></p>
                 </div>
                 <div class="items">
-                    <label for="">Last loan Collection Date:</label>
-                    <input type="text"  id="collection">
+                    <select name="" id="collection">
+                        <option value="">Last loan Collection Date</option>
+                        <option value="1">In 1 Month</option>
+                        <option value="2">In 2 Month</option>
+                        <option value="3">In 3 Month</option>
+                        <option value="4">In 4 Month</option>
+                        <option value="5">In 5 Month</option>
+                        <option value="6">In 6 Month</option>
+                        <option value="7">In 7 Month</option>
+                        <option value="8">In 8 Month</option>
+                        <option value="9">In 9 Month</option>
+                        <option value="10">In 10 Month</option>
+                        <option value="11">In 11 Month</option>
+                        <option value="12">In 12 Month</option>
+                    </select>
                     <p id="collection_err"></p>
                 </div>
                 <div class="items">
-                    <label for="">Loan Repayment Period (IN MONTHS):</label>
-                    <input type="number"  id="repayment">
+                    <select name="" id="repayment">
+                        <option value="">Loan Repayment Period</option>
+                        <option value="1">In 1 Month</option>
+                        <option value="2">In 2 Month</option>
+                        <option value="3">In 3 Month</option>
+                        <option value="4">In 4 Month</option>
+                        <option value="5">In 5 Month</option>
+                        <option value="6">In 6 Month</option>
+                        <option value="7">In 7 Month</option>
+                        <option value="8">In 8 Month</option>
+                        <option value="9">In 9 Month</option>
+                        <option value="10">In 10 Month</option>
+                        <option value="11">In 11 Month</option>
+                        <option value="12">In 12 Month</option>
+                    </select>
                     <p id="repayment_err"></p>
                 </div>
                 <div class="items">

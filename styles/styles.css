@@ -60,6 +60,7 @@ nav{
     padding: 15px 40px;
     background-color: white;
     width: 50%;
+    border-radius: 10px;
 }
 form{
     display: grid;
@@ -74,12 +75,16 @@ form{
     justify-content: center;
 
 }
-input,select{
+input{
     outline: none;
     border: 1px solid black;
-    padding: 10px 0 20px 9px;
+    padding: 10px 0 10px 9px;
     margin-top: 10px;
     text-align: left;
+}
+select{
+    padding: 5px 0;
+    outline: none;
 }
 label{
     color: #555;
@@ -95,10 +100,72 @@ button{
     font-family: 'my font';
     font-size: 24px;
     cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.5s, border 0.4s, color 0.6s ease-in-out;
+}
+button:hover{
+    background-color: white;
+    border: 1px solid rgb(8, 223, 8);
+    color:  rgb(8, 223, 8);
 }
 p{
     color: red;
     margin-top: 2;
     margin-bottom: 4px;
     font-size: 10px;
+}
+.not{
+    display: none;
+}
+@media screen and (min-width: 320px) and (max-width:490px) {
+    .none{
+        display: none;
+    }
+    .not{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .not_bg{
+        height: 100px;
+        width: 50%;
+        background-image: url(../image/logo.png);
+        background-repeat:no-repeat ;
+        background-position: center;
+        background-size: contain;
+    }
+    .right{
+        position: relative;
+        border-radius: 3px;
+        width: 70%;
+    }
+    .bg{
+        flex-direction: column;
+        height: 185vh;
+    }
+    form{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .left{
+        position: relative;
+        
+        text-align: center;
+
+    }
+    .left h2{
+        font-size: 30px;
+    
+    }
+    .left p{
+        font-size: 12px;
+    }
+    label{
+        font-size: 12px;
+
+    }
+    button,select,input{
+        font-size: 12px;
+    }
 }
